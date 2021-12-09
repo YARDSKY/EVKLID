@@ -15,15 +15,14 @@ img {
     max-width: 100%;
 }
 
-
 /*global*/
-.list_reset {
+.list-reset {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.btn_reset {
+.btn-reset {
     padding: 0;
     border: none;
     background-color: transparent;
