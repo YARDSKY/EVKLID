@@ -77,7 +77,7 @@ body {
 /*header*/
 .header {
     background-color: #fff;
-    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
 }
 .header__container {
     padding: 14px 0;
@@ -103,4 +103,19 @@ body {
     line-height: 22px;
     font-weight: 600;
     color: #333;
+}
+
+.brief-information__content {
+    padding: 100px 853px 100px 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.content-wrapper__headline {
+    margin: 0 0 24px 0;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+    color: #FFF;
 }
