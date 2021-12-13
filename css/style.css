@@ -15,10 +15,17 @@ img {
     max-width: 100%;
 }
 
+:root {
+    --FF9900: #FF9900;
+    --333: #333;
+    --fff: #fff;
+}
+
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
     url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-display: swap;
     font-weight: 400;
     font-style: normal;
 }
@@ -27,6 +34,7 @@ img {
     font-family: 'Montserrat';
     src: url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'),
     url('../fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-display: swap;
     font-weight: 600;
     font-style: normal;
 }
@@ -35,6 +43,7 @@ img {
     font-family: 'Montserrat';
     src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
     url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-display: swap;
     font-weight: 700;
     font-style: normal;
 }
@@ -43,11 +52,20 @@ img {
     font-family: 'Montserrat';
     src: url('../fonts/montserrat-extrabold-webfont.woff2') format('woff2'),
     url('../fonts/montserrat-extrabold-webfont.woff') format('woff');
+    font-display: swap;
     font-weight: 800;
     font-style: normal;
 }
 
 /*global*/
+.section-offset {
+    margin-bottom: 100px;
+}
+
+.headline-offset, .text-offset {
+    margin: 0;
+}
+
 .list-reset {
     margin: 0;
     padding: 0;
@@ -65,29 +83,37 @@ img {
     display: flex;
 }
 
+body {
+    min-width: 320px;
+    font-family: "Montserrat", sans-serif;
+}
+
 .container {
-    max-width: 1770px;
+    max-width: 1800px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
-body {
-    font-family: "Montserrat", sans-serif;
+.btn {
+    background-color: var(--FF9900);
+    color: var(--fff);
 }
 
 /*header*/
 .header {
-    background-color: #fff;
+    background-color: var(--fff);
     box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
 }
+
 .header__container {
-    padding: 14px 0;
+    padding: 14px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .header__nav-list {
-    margin-right: 85px;
+    margin-right: 76px;
 }
 
 .header__nav-item {
@@ -101,12 +127,15 @@ body {
 .header__nav-link {
     font-size: 18px;
     line-height: 22px;
-    font-weight: 600;
-    color: #333;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--333);
 }
 
+/*brief information*/
 .brief-information__content {
     padding: 100px 853px 100px 80px;
+    min-height: 619px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -114,8 +143,95 @@ body {
 
 .content-wrapper__headline {
     margin: 0 0 24px 0;
+    width: 800px;
     font-weight: 800;
     font-size: 70px;
+    letter-spacing: 4px;
     line-height: 85px;
-    color: #FFF;
+    color: var(--fff);
+}
+
+.content-wrapper__description {
+    margin-bottom: 90px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 1px;
+    color: var(--fff);
+}
+
+.content-wrapper__btn {
+    padding: 24px 45px;
+    font-size: 24px;
+}
+
+/*about us*/
+.about-us__headline {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: var(--333);
+}
+
+.about-us__description {
+    margin-bottom: 50px;
+    width: 1235px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--333);
+}
+
+.card-wrapper {
+    align-items: flex-end;
+    min-height: 622px;
+    width: 868px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-item {
+    margin-right: 32px;
+}
+
+.description-wrapper {
+    width: 100%;
+    height: 196px;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.card-wrapper__description {
+    width: 454px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--fff);
+}
+
+.card-wrapper-btn {
+    padding: 20px 38px;
+    background-color: transparent;
+    border: 3px solid #FF9900
+}
+
+.right-item__card {
+    margin-bottom: 32px;
+    padding: 65px 120px 65px 65px;
+    border: 1px solid #CACACA;
+}
+
+.right-item__card:last-child {
+    margin-bottom: 0;
+}
+
+.inner-card_headline {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--333);
 }
