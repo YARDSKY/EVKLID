@@ -127,7 +127,6 @@ body {
 .header__nav-link {
     font-size: 18px;
     line-height: 22px;
-    letter-spacing: 1px;
     font-weight: 700;
     color: var(--333);
 }
@@ -143,10 +142,9 @@ body {
 
 .content-wrapper__headline {
     margin: 0 0 24px 0;
-    width: 800px;
-    font-weight: 800;
+    width: 837px;
+    font-weight: 700;
     font-size: 70px;
-    letter-spacing: 4px;
     line-height: 85px;
     color: var(--fff);
 }
@@ -156,13 +154,13 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    letter-spacing: 1px;
     color: var(--fff);
 }
 
 .content-wrapper__btn {
-    padding: 24px 45px;
+    padding: 23px 35px;
     font-size: 24px;
+    font-weight: 700;
 }
 
 /*about us*/
