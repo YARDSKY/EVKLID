@@ -232,7 +232,7 @@ body {
     padding: 20px 38px;
     margin-left: auto;
     background-color: transparent;
-    border: 1px solid var(--FF9900);
+    border: 2px solid var(--FF9900);
 }
 
 .about-us__card-small {
@@ -272,9 +272,3 @@ body {
     background-position: 9% 53%;
     background-size: 22%;
 }
-
-/*.card-wrapper-btn {*/
-/*    padding: 20px 38px;*/
-/*    background-color: transparent;*/
-/*    border: 3px solid #FF9900*/
-/*}*/
