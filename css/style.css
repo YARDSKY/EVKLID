@@ -272,3 +272,74 @@ body {
     background-position: 9% 53%;
     background-size: 22%;
 }
+
+/*how we work*/
+.how-we-work__slider {
+    justify-content: space-between;
+}
+
+.how-we-work__headline {
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: var(--333);
+}
+
+.how-we-work__list {
+    margin-bottom: 50px;
+}
+
+.link-list__item {
+    margin-right: 85px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--333);
+}
+
+.link-list__item:last-child {
+    margin-right: 0;
+}
+
+.left-side__headline {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--333);
+}
+
+.left-side__description {
+    margin-bottom: 50px;
+    width: 758px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--333);
+}
+
+.left-side__btn {
+    padding: 20px 40px;
+    margin-right: 32px;
+}
+
+.left-side__btn:last-child {
+    margin-right: 0;
+}
+
+.left-side__btn-transparent {
+    padding: 19px 36px;
+    background-color: transparent;
+    border: 1px solid var(--333);
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--333);
+}
+
+.right-side {
+    min-width: 865px;
+    min-height: 460px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
