@@ -181,6 +181,98 @@ body {
     color: var(--333);
 }
 
+.about-us__cards-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-us__cards-part {
+    /*
+    Здесь мы высчитываем проценты относительно ширины родительского блока.
+    1770 - это ширина родительского блока на десктопном макете, или внутренняя ширина container
+    870 - это то число в пикселях, которое должно получиться с помощью процентов при ширине родительского блока 1770 пикселей
+    870 / 1770 * 100% = 49.15254237288136%
+    Если поэксперементировать и задать это значение в процентах для about__cards-part то мы получим тех же 870 пикселях, но при уменьшении ширины родительского блока пропоционально уменьшится и ширина about__cards-part
+    */
+    width: calc(870 / 1770 * 100%);
+}
+
+.about-us__card-big {
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us__card-big_more {
+    background-image: url("../img/worker.png");
+}
+
+.about-us__card-big-description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 47px 50px;
+    color: var(--fff);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.about-us__card-big-text {
+    width: 454px;
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--fff);
+}
+
+.about-us__card-big-btn {
+    padding: 20px 38px;
+    margin-left: auto;
+    background-color: transparent;
+    border: 1px solid var(--FF9900);
+}
+
+.about-us__card-small {
+    padding: 65px 7% 65px 35%;
+    border: 1px solid lightgray;
+    background-repeat: no-repeat;
+}
+
+.about-us__card-small:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.about-us__cards-headline {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--333);
+}
+
+.about-us__card-description {
+    /*width: 400px;*/
+    width: 92%;
+    font-size: 16px;
+    line-height: 31px;
+    color: var(--333);
+}
+
+.about-us__card-small_consult {
+    background-image: url("../img/box.svg");
+    background-position: 9% 53%;
+    background-size: 22%;
+}
+
+.about-us__card-small_other {
+    background-image: url("../img/cog.svg");
+    background-position: 9% 53%;
+    background-size: 22%;
+}
+
 /*.card-wrapper-btn {*/
 /*    padding: 20px 38px;*/
 /*    background-color: transparent;*/
