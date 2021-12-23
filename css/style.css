@@ -93,8 +93,8 @@ body {
 }
 
 .container {
-    max-width: 1800px;
-    padding: 0 15px;
+    max-width: 1844px;
+    padding: 0 37px;
     margin: 0 auto;
 }
 
@@ -110,7 +110,7 @@ body {
 }
 
 .header__container {
-    padding: 14px 15px;
+    padding: 14px 37px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -120,15 +120,15 @@ body {
     margin-right: 76px;
 }
 
-.header__nav-item {
+.header__nav-list_item {
     margin-right: 85px;
 }
 
-.header__nav-item:last-child {
+.header__nav-list_item:last-child {
     margin-right: 0;
 }
 
-.header__nav-link {
+.header__nav-list_item-link {
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
@@ -146,7 +146,7 @@ body {
 
 .content-wrapper__headline {
     margin: 0 0 24px 0;
-    width: 837px;
+    max-width: 837px;
     font-weight: 700;
     font-size: 70px;
     line-height: 85px;
@@ -155,6 +155,7 @@ body {
 
 .content-wrapper__description {
     margin-bottom: 90px;
+    max-width: 790px;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -178,7 +179,7 @@ body {
 
 .about-us__description {
     margin-bottom: 50px;
-    width: 1235px;
+    max-width: 1235px;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
@@ -316,7 +317,7 @@ body {
 
 .left-side__description {
     margin-bottom: 50px;
-    width: 758px;
+    max-width: 758px;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
@@ -459,11 +460,12 @@ body {
 }
 
 .footer__wrapper {
-    padding: 50px 18px;
+    justify-content: space-between;
+    padding: 50px 40px;
 }
 
 .footer__left {
-    margin-right: 350px;
+    flex-basis: 21%;
 }
 
 .logo-link-container__img {
@@ -475,7 +477,7 @@ body {
 }
 
 .footer-nav__item {
-    min-width: 254px;
+    max-width: 254px;
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
@@ -492,11 +494,12 @@ body {
 }
 
 .center-part__form-container {
-    margin-right: 236px;
+    flex-basis: 100%;
+    /*margin-right: 236px;*/
 }
 
 .form-wrapper__headline {
-    width: 408px;
+    max-width: 408px;
     margin-bottom: 25px;
     font-weight: 400;
     font-size: 48px;
@@ -505,7 +508,7 @@ body {
 }
 
 .input-properties {
-    min-width: 570px;
+    min-width: 100%;
     padding: 14px 24px;
     display: block;
     margin-bottom: 25px;
@@ -546,7 +549,7 @@ body {
 }
 
 .right-part__description {
-    width: 363px;
+    max-width: 363px;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
