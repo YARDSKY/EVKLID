@@ -536,19 +536,6 @@ body {
     margin-right: 22px;
 }
 
-.checkbox-agreement {
-    content: url("../img/checkbox.svg");
-    width: 14px;
-    height: 14px;
-    border: 1px solid var(--cacaca);
-    display: inline-block;
-    -webkit-appearance: none;
-    position: relative;
-}
-
-.checkbox-agreement:hover {
-    cursor: pointer;
-}
 
 .right-part_personal-date {
     color: var(--cacaca);
