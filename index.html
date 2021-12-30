@@ -6,11 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>Евклид — проектные системы</title>
 </head>
 <body>
 <header class="header">
   <div class="container header__container flex">
+    <button class="btn-reset burger-btn">
+      <span class="burger-btn__line"></span>
+      <span class="burger-btn__line"></span>
+      <span class="burger-btn__line"></span>
+    </button>
     <a href="" class="header__logo logo-wrapper">
       <img class="logo-wrapper" src="img/logo.svg" alt="Евклид — проектные системы">
     </a>
@@ -49,7 +55,11 @@
 <main class="main">
   <section class="brief-information section-offset" id="projects">
     <div class="container brief-information__container">
-      <div class="brief-information__content" style="background-image: url('img/pic-1.png')">
+      <div class="brief-information__content">
+        <picture>
+          <source srcset="mdn-logo-wide.png" media="(max-width: 1320px)">
+          <img src="mdn-logo-narrow.png" alt="MDN">
+        </picture>
         <h1 class="main__headline headline-offset">
           Проектные решения любой сложности
         </h1>
@@ -81,7 +91,7 @@
       <div class="about-us__cards-wrapper flex">
         <div class="about-us__cards-part">
           <div class="about-us__card about-us__card-big about-us__card-big_more flex">
-            <div class="about-us__card-big-description">
+            <div class="about-us__card-big-description flex">
               <p class="about-us__card-big-text text-offset">Принимая во&nbsp;внимание показатели успешности,
                 перспективное
                 планирование способствует подготовке и&nbsp;реализации новых принципов.
@@ -119,24 +129,24 @@
       </h2>
       <ul class="how-we-work__list link-list list-reset flex">
         <li class="link-list__item">
-          <a href="" class="link-list__item-link">
+          <button class="link-list__item-btn btn-reset">
             1&nbsp;шаг
-          </a>
+          </button>
         </li>
         <li class="link-list__item">
-          <a href="" class="link-list__item-link">
+          <button class="link-list__item-btn btn-reset">
             2&nbsp;шаг
-          </a>
+          </button>
         </li>
         <li class="link-list__item">
-          <a href="" class="link-list__item-link">
+          <button class="link-list__item-btn btn-reset">
             3&nbsp;шаг
-          </a>
+          </button>
         </li>
         <li class="link-list__item">
-          <a href="" class="link-list__item-link">
+          <button class="link-list__item-btn btn-reset">
             4&nbsp;шаг
-          </a>
+          </button>
         </li>
       </ul>
       <div class="how-we-work__slider slider-wrapper flex">
@@ -276,7 +286,7 @@
       </nav>
       <ul class="footer__social-list social-icons-wrapper list-reset flex">
         <li class="footer__social-item">
-          <a class="social-icons-wrapper__link" href="">
+          <a class="social-icons-wrapper__link" href="#">
             <svg class="social-icons" width="60" height="60" viewBox="0 0 60 60" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
@@ -286,7 +296,7 @@
           </a>
         </li>
         <li class="footer__social-item">
-          <a class="social-icons-wrapper__link" href="">
+          <a class="social-icons-wrapper__link" href="#">
             <svg class="social-icons" width="60" height="60" viewBox="0 0 60 60" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
@@ -296,7 +306,7 @@
           </a>
         </li>
         <li class="footer__social-item">
-          <a class="social-icons-wrapper__link" href="">
+          <a class="social-icons-wrapper__link" href="#">
             <svg class="social-icons" width="60" height="60" viewBox="0 0 60 60" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
