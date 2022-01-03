@@ -73,9 +73,14 @@
         display: none;
     }
 
+    .brief-information {
+        margin-bottom: 84px;
+    }
+
     .brief-information__content {
-        padding: 150px 77px;
+        padding: 160px 77px;
         min-height: 668px;
+        background-image: url('../img/pic-1_1024px.png');
     }
 
     .main__headline {
@@ -91,6 +96,17 @@
         line-height: 24px;
     }
 
+    .about-us {
+        margin-bottom: 90px;
+    }
+
+    .about-us__headline {
+        margin-bottom: 3px;
+    }
+
+    .about-us__description {
+        margin-bottom: 64px;
+    }
 
     .about-us__cards-part {
         width: 100%;
@@ -106,12 +122,41 @@
         margin-bottom: 48%;
     }
 
+    .about-us__card-small {
+        padding: 70px 8% 61px 35%;
+        border: 1px solid lightgray;
+        background-repeat: no-repeat;
+    }
+
+    .left-side__description {
+        width: 437px;
+        margin-bottom: 42px;
+    }
+
     .how-we-work {
-        margin-bottom: 204px;
+        margin-bottom: 97px;
+    }
+
+    .how-we-work__list {
+        margin-bottom: 55px;
+    }
+
+    .left-side {
+        margin-right: 35px;
+    }
+
+    .right-side__img {
+        height: 103%;
+        background-image: url('../img/how-we-work_small.png');
+    }
+
+    .question__heading {
+        padding: 32px 42px 7px 0;
+        font-size: 20px;
     }
 
     .footer__wrapper {
-        padding: 61px 45px;
+        padding: 46px 45px;
     }
 
     .footer__nav-item {
