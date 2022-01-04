@@ -182,5 +182,137 @@
 }
 
 @media (max-width: 992px) {
+    .header__container {
+        padding: 43px 47px;
+    }
 
+    .brief-information {
+        margin-bottom: 74px;
+    }
+
+    .brief-information__content {
+        padding: 160px 40px;
+    }
+
+    .main__headline {
+        margin-bottom: 15px;
+        width: 588px;
+        font-size: 50px;
+        line-height: 61px;
+    }
+
+    .main__description {
+        width: 588px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .about-us {
+        margin-bottom: 80px;
+    }
+
+    .about-us__description {
+        margin-bottom: 60px;
+    }
+
+    .about-us__card-big {
+        height: 126%;
+    }
+
+    .about-us__cards-part {
+        margin-bottom: 24%;
+    }
+
+    .about-us__card-big-description {
+        padding: 38px 42px;
+    }
+
+    .about-us__card-small {
+        padding: 41px 7% 34px 25%;
+    }
+
+    .about-us__cards-headline {
+        width: 452px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .about-us__card-description {
+        width: 450px;
+        font-size: 16px;
+        line-height: 31px;
+    }
+
+    .about-us__card-small_consult, .about-us__card-small_other {
+        background-position: 8% 53%;
+        background-size: 16%;
+    }
+
+    .how-we-work__list {
+        margin-bottom: 50px;
+    }
+
+    .link-list__item {
+        margin-right: 23.5%;
+    }
+
+    .how-we-work__slider {
+        flex-direction: column-reverse;
+    }
+
+    .left-side__description {
+        width: 104%;
+        margin-bottom: 47px;
+    }
+
+    .right-side {
+        padding: 0;
+        margin-bottom: 35px;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .right-side__img {
+        width: 100%;
+        min-height: 284px;
+        background-image: url('../img/768-how-we-work.jpg');
+    }
+
+    .frequent-questions {
+        margin-bottom: 9px;
+    }
+
+    .question__heading {
+        padding: 30px 42px 0 0;
+    }
+
+    .content {
+        padding-top: 30px;
+        padding-bottom: 17px;
+    }
+
+    .footer__wrapper {
+        padding: 50px 50px;
+        flex-direction: column-reverse;
+    }
+
+    .footer__nav {
+        display: none;
+    }
+
+    .top-part {
+        margin-bottom: 50px;
+    }
+
+    .bottom-part {
+        margin-right: 0;
+    }
+
+    .footer-description {
+        display: none;
+    }
+
+    .inputs-wrapper {
+        width: 80%;
+    }
 }
