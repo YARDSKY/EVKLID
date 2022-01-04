@@ -277,6 +277,10 @@ body {
     background-image: url("../img/worker.png");
 }
 
+.about-us__card-big-description-small {
+    display: none;
+}
+
 .about-us__card-big-description {
     justify-content: space-between;
     align-items: center;
@@ -286,7 +290,7 @@ body {
 }
 
 .about-us__card-big-text {
-    width: 454px;
+    max-width: 454px;
     margin-right: 30px;
     font-weight: 700;
     font-size: 16px;
@@ -360,6 +364,7 @@ body {
 
 .how-we-work__headline {
     margin-bottom: 50px;
+    max-width: 430px;
     font-weight: 400;
     font-size: 48px;
     line-height: 59px;
@@ -367,6 +372,8 @@ body {
 }
 
 .how-we-work__list {
+    flex-basis: 100%;
+    flex-shrink: 4;
     margin-bottom: 50px;
 }
 
@@ -725,6 +732,9 @@ body {
     transition: background-color 0.2s ease-in-out;
 }
 
+.checkbox-wrapper {
+    display: inline;
+}
 
 .form-wrapper__personal-date {
     color: var(--bright-grey);

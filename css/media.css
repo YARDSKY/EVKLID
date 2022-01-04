@@ -9,7 +9,6 @@
         height: 100px;
     }
 
-
     .header__container {
         justify-content: space-between;
         align-items: center;
@@ -196,13 +195,13 @@
 
     .main__headline {
         margin-bottom: 15px;
-        width: 588px;
+        max-width: 588px;
         font-size: 50px;
         line-height: 61px;
     }
 
     .main__description {
-        width: 588px;
+        max-width: 588px;
         font-size: 18px;
         line-height: 22px;
     }
@@ -220,7 +219,7 @@
     }
 
     .about-us__cards-part {
-        margin-bottom: 24%;
+        margin-bottom: 160px;
     }
 
     .about-us__card-big-description {
@@ -232,13 +231,13 @@
     }
 
     .about-us__cards-headline {
-        width: 452px;
+        max-width: 452px;
         font-size: 24px;
         line-height: 29px;
     }
 
     .about-us__card-description {
-        width: 450px;
+        max-width: 450px;
         font-size: 16px;
         line-height: 31px;
     }
@@ -250,6 +249,7 @@
 
     .how-we-work__list {
         margin-bottom: 50px;
+        width: 100%;
     }
 
     .link-list__item {
@@ -279,7 +279,7 @@
     }
 
     .frequent-questions {
-        margin-bottom: 9px;
+        margin-bottom: 80px;
     }
 
     .question__heading {
@@ -315,4 +315,184 @@
     .inputs-wrapper {
         width: 80%;
     }
+}
+
+@media (max-width: 660px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .header__container {
+        padding: 25px 37px;
+    }
+
+    .brief-information__content {
+        /*display: flex;*/
+        padding: 150px 21px;
+        /*flex-direction: column;*/
+    }
+
+    .main__headline {
+        min-width: 247px;
+        margin-bottom: 35px;
+        font-size: 40px;
+        line-height: 45px;
+        text-align: center;
+    }
+
+    .main__description {
+        min-width: 247px;
+        margin-bottom: 35px;
+        font-size: 25px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .main__btn {
+        width: 80%;
+        align-self: center
+    }
+
+    .about-us__headline {
+        margin-bottom: 10px;
+    }
+
+    .about-us__card-big-text {
+        font-size: 14px;
+    }
+
+    .inputs-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .link-list__item {
+        margin-right: 20%;
+    }
+
+    .footer__wrapper {
+        padding: 30px;
+    }
+
+    .inputs-wrapper {
+        width: 100%;
+    }
+
+    .form-wrapper__btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-wrapper__btn {
+        align-self: center;
+        margin-bottom: 10px;
+        padding: 18px 29px;
+    }
+
+    .form-wrapper__personal-date {
+        font-size: 18px;
+    }
+
+    .checkbox-wrapper {
+        display: block;
+    }
+}
+
+@media (max-width: 560px) {
+    .about-us__cards-part {
+        margin: 0;
+    }
+
+    .about-us__card-big {
+        height: 374px;
+        margin-bottom: 20px;
+    }
+
+    .about-us__card-big-description {
+        display: none;
+    }
+
+    .about-us__card-big-description-small {
+        display: block;
+    }
+
+    .about-us__card-big-description-small {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .about-us__card-big-text-small {
+        margin-right: 0;
+        max-width: 450px;
+        margin-bottom: 50px;
+        line-height: 28px;
+        color: var(--bright-dark);
+    }
+
+    .about-us__card-big-btn {
+        margin-left: 0;
+        padding: 10px 50px;
+        margin-right: auto;
+        border: 2px solid var(--bright-orange);
+        color: var(--bright-orange);
+    }
+
+}
+
+@media (max-width: 515px) {
+    .header__container {
+        padding: 47px 16px;
+    }
+
+    .header__logo {
+        width: 110px;
+        height: 35px;
+        margin-right: 0;
+    }
+
+    .brief-information__content {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 21px;
+        min-height: 308px;
+    }
+
+    .main__headline {
+        margin-bottom: 7px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .main__description {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .main__btn {
+        width: 164px;
+        padding: 12px 12px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .about-us__card-small {
+        padding: 108px 7% 34px 25px;
+        border: none;
+        background-position: 7% 4%;
+        background-size: 20%;
+    }
+
+    .how-we-work__headline {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .link-list__item {
+        margin-right: 16%;
+        font-size: 14px;
+    }
+
 }
