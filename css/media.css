@@ -443,6 +443,10 @@
 }
 
 @media (max-width: 515px) {
+    .brief-information {
+        margin-bottom: 61px;
+    }
+
     .header__container {
         padding: 47px 16px;
     }
@@ -478,21 +482,146 @@
         line-height: 15px;
     }
 
+    .about-us {
+        margin-bottom: 47px;
+    }
+
+    .about-us__headline {
+        margin-bottom: 17px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .about-us__description {
+        margin-bottom: 16px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .about-us__card-big {
+        height: 200px;
+        margin-bottom: 5px;
+    }
+
+    .about-us__card-big-text-small {
+        margin-bottom: 22px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .about-us__card-big-btn {
+        padding: 10px 41px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
     .about-us__card-small {
-        padding: 108px 7% 34px 25px;
+        padding: 60px 2% 16px 2px;
         border: none;
-        background-position: 7% 4%;
+        background-position: 2% 0;
         background-size: 20%;
     }
 
+    .about-us__card-small:not(:last-child) {
+        margin-bottom: 3px;
+    }
+
+    .about-us__cards-headline {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px
+    }
+
+    .about-us__card-description {
+        margin: 0;
+        width: 290px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .how-we-work {
+        margin-bottom: 62px;
+    }
+
     .how-we-work__headline {
-        font-size: 20px;
-        line-height: 24px;
+        margin-bottom: 19px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .how-we-work__list {
+        margin-bottom: 13px;
     }
 
     .link-list__item {
         margin-right: 16%;
         font-size: 14px;
+    }
+
+    .left-side__headline {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .left-side__description {
+        width: 290px;
+        margin-bottom: 14px;
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    .left-side__btn, .left-side__btn-transparent {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .left-side__btn {
+        padding: 10px 44px;
+        margin-right: 12px;
+    }
+
+    .left-side__btn-transparent {
+        padding: 12px 30px;
+    }
+
+    .how-we-work__btn-wrapper {
+        display: flex;
+    }
+
+    .right-side {
+        margin-bottom: 17px;
+    }
+
+    .right-side__img {
+        min-height: 156px;
+        width: 100%;
+    }
+
+    .frequent-questions__headline {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .question__heading {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .head-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .head-icon::before {
+        width: 26px;
+        height: 1px;
+    }
+
+    .head-icon::after {
+        width: 1px;
+        height: 26px;
     }
 
 }
