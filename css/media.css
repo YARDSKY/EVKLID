@@ -519,7 +519,7 @@
         padding: 60px 2% 16px 2px;
         border: none;
         background-position: 2% 0;
-        background-size: 20%;
+        background-size: 15%;
     }
 
     .about-us__card-small:not(:last-child) {
@@ -624,6 +624,10 @@
         height: 26px;
     }
 
+    .footer__center {
+        margin-bottom: 17px;
+    }
+
     .footer__wrapper {
         padding: 31px 14px;
     }
@@ -660,19 +664,37 @@
     .form-wrapper__personal-date::after {
         content: "";
         margin-top: 20px;
+        margin-bottom: 0;
         display: block;
         /*max-width: 295px;*/
         width: 100%;
         border-bottom: 1px solid #595959;
     }
 
+    .footer__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .logo-link-container__img {
+        margin-bottom: 10px;
         width: 131px;
         height: 42px;
+    }
+
+    .footer__social-item {
+        margin-right: 11px;
     }
 
     .social-icons {
         width: 40px;
         height: 40px;
+    }
+}
+
+@media (max-width: 390px) {
+    .about-us__card-small {
+        background-size: 19%;
     }
 }
