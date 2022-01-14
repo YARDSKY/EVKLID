@@ -1,3 +1,6 @@
-// if (screen.width >= 2000) {
-//   document.write("<style>body{zoom:120%;}</style>");
-// }
+$( ".js-accordion" ).accordion({
+  collapsible: true,
+  active: false,
+  icons: false,
+  heightStyle: 'content'
+});

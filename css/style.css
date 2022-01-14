@@ -476,7 +476,129 @@ body {
 }
 
 /*frequent questions*/
+.frequent-questions__headline {
+    margin-bottom: 32px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 59px;
+    color: var(--black);
+}
+.questions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
+.question:first-child {
+    border-top: 1px solid lightgray;
+}
+
+.question {
+    margin-top: -1px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid lightgray;
+    transition: border-color .3s ease;
+}
+
+.heading {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 40px 120px 40px 3px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color .3s ease;
+    color: var(--black);
+}
+
+.content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.question:first-child:hover,
+.question:hover,
+.question:focus-within {
+    border-color: orange;
+}
+
+.head-icon {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightgray;
+    transform: translateY(-50%);
+    transition: background-color.3s, .6s ease, transform .3s, .6s ease;
+}
+
+.head-icon::before,
+.head-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    transition: background-color, .3s ease;
+}
+
+.head-icon::before {
+    width: 31px;
+    height: 1px;
+}
+
+.head-icon::after {
+    width: 1px;
+    height: 31px;
+}
+
+.heading:hover,
+.heading:focus {
+    color: orange;
+    outline: none;
+}
+
+.heading:hover .head-icon,
+.heading:focus .head-icon {
+    background-color: orange;
+}
+
+.heading:hover .head-icon::before,
+.heading:hover .head-icon::after,
+.heading:focus .head-icon::before,
+.heading:focus .head-icon::after {
+    background-color: #fff;
+}
+
+.heading.ui-accordion-header-active .head-icon {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.test-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+}
+
+.test-item {
+    width: calc(100% / 3 - 20px);
+}
+
+@media (max-width: 1024px) {
+    .test-item {
+        width: calc(100% / 2 - 30px);
+    }
+}
 
 /*footer*/
 .footer {

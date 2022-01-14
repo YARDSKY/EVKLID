@@ -182,7 +182,7 @@
 
 @media (max-width: 992px) {
     .header__container {
-        padding: 43px 47px;
+        padding: 30px 47px;
     }
 
     .brief-information {
@@ -448,7 +448,7 @@
     }
 
     .header__container {
-        padding: 47px 16px;
+        padding: 30px 16px;
     }
 
     .header__logo {
