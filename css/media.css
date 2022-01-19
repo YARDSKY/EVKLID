@@ -95,36 +95,50 @@
         line-height: 24px;
     }
 
-    .about-us {
+    .about {
         margin-bottom: 90px;
     }
 
-    .about-us__headline {
+    .about__headline {
         margin-bottom: 3px;
     }
 
-    .about-us__description {
-        margin-bottom: 64px;
+    .about__cards-part {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
-    .about-us__cards-part {
-        width: 100%;
+    .about__cards-part:not(:last-of-type) {
         margin-bottom: 32px;
     }
 
-    .about-us__cards-part:last-child {
+    .about__card-big {
+        width: 100%;
+        padding-top: 50%;
+    }
+
+    .about__card-small {
+        width: calc(50% - 15px);
+        padding: 20px 7% 20px 16%;
+    }
+
+    .about__card-small:not(:last-of-type) {
         margin-bottom: 0;
     }
 
-    .about-us__card-big {
-        height: 100%;
-        margin-bottom: 48%;
+    .about__card-small_consult,
+    .about__card-small_other {
+        background-position: 10% 30px;
     }
 
-    .about-us__card-small {
-        padding: 70px 8% 61px 35%;
-        border: 1px solid lightgray;
-        background-repeat: no-repeat;
+    .about__card-small_consult {
+        background-size: 19%;
+    }
+
+    .about__card-small_other {
+        background-size: 20%;
     }
 
     .left-side__description {
@@ -206,45 +220,28 @@
         line-height: 22px;
     }
 
-    .about-us {
+    .about {
         margin-bottom: 80px;
     }
 
-    .about-us__description {
-        margin-bottom: 60px;
+    .about__card-big {
+        width: 100%;
+        padding-top: 60.13%;
     }
 
-    .about-us__card-big {
-        height: 126%;
+    .about__card-small {
+        width: 100%;
+        padding: 20px 7% 20px 28%;
     }
 
-    .about-us__cards-part {
-        margin-bottom: 160px;
+    .about__card-small:not(:last-of-type) {
+        margin-bottom: 32px;
     }
 
-    .about-us__card-big-description {
-        padding: 38px 42px;
-    }
-
-    .about-us__card-small {
-        padding: 41px 7% 34px 25%;
-    }
-
-    .about-us__cards-headline {
-        max-width: 452px;
-        font-size: 24px;
-        line-height: 29px;
-    }
-
-    .about-us__card-description {
-        max-width: 450px;
-        font-size: 16px;
-        line-height: 31px;
-    }
-
-    .about-us__card-small_consult, .about-us__card-small_other {
-        background-position: 8% 53%;
-        background-size: 16%;
+    .about__card-small_consult,
+    .about__card-small_other {
+        background-position: 5% 50%;
+        background-size: 15%;
     }
 
     .how-we-work__list {
@@ -353,12 +350,48 @@
         align-self: center
     }
 
-    .about-us__headline {
-        margin-bottom: 10px;
+    .about__container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
-    .about-us__card-big-text {
-        font-size: 14px;
+    .about__card-big {
+        padding-top: 0;
+        background-size: 0;
+    }
+
+    .about__card-big::before {
+        content: "";
+        display: block;
+        margin-bottom: 10px;
+        padding-top: calc(200 / 290 * 100%);
+        background-color: grey;
+        background-image: inherit;
+        background-size: cover;
+    }
+
+    .about__card-big-description {
+        padding: 0;
+        color: #000;
+        background-color: transparent;
+    }
+
+    .about__card-small {
+        border: none;
+        padding: 70px 0 0;
+    }
+
+    .about__card-small_consult,
+    .about__card-small_other {
+        background-position: left top;
+    }
+
+    .about__card-small_consult {
+        background-size: 65px;
+    }
+
+    .about__card-small_other {
+        background-size: 60px;
     }
 
     .inputs-wrapper {
@@ -482,62 +515,17 @@
         line-height: 15px;
     }
 
-    .about-us {
+    .about {
         margin-bottom: 47px;
     }
 
-    .about-us__headline {
+    .about__headline {
         margin-bottom: 17px;
         font-size: 24px;
         line-height: 29px;
     }
 
-    .about-us__description {
-        margin-bottom: 16px;
-        font-size: 14px;
-        line-height: 28px;
-    }
 
-    .about-us__card-big {
-        height: 200px;
-        margin-bottom: 5px;
-    }
-
-    .about-us__card-big-text-small {
-        margin-bottom: 22px;
-        font-size: 14px;
-        line-height: 28px;
-    }
-
-    .about-us__card-big-btn {
-        padding: 10px 41px;
-        font-size: 12px;
-        line-height: 15px;
-    }
-
-    .about-us__card-small {
-        padding: 60px 2% 16px 2px;
-        border: none;
-        background-position: 2% 0;
-        background-size: 15%;
-    }
-
-    .about-us__card-small:not(:last-child) {
-        margin-bottom: 3px;
-    }
-
-    .about-us__cards-headline {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 22px
-    }
-
-    .about-us__card-description {
-        margin: 0;
-        width: 290px;
-        font-size: 14px;
-        line-height: 28px;
-    }
 
     .how-we-work {
         margin-bottom: 62px;

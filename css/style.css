@@ -231,7 +231,7 @@ body {
 }
 
 /*about us*/
-.about-us__headline {
+.about__headline {
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 48px;
@@ -239,32 +239,37 @@ body {
     color: var(--bright-dark);
 }
 
-.about-us__description {
+.about__main-description {
     margin-bottom: 50px;
     max-width: 1235px;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 32px;
+    line-height: 33px;
     color: var(--bright-dark);
 }
-
-.about-us__cards-wrapper {
+.about__cards-wrap {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.about-us__cards-part {
+.about__cards-part {
     /*
+
     Здесь мы высчитываем проценты относительно ширины родительского блока.
+
     1770 - это ширина родительского блока на десктопном макете, или внутренняя ширина container
+
     870 - это то число в пикселях, которое должно получиться с помощью процентов при ширине родительского блока 1770 пикселей
+
     870 / 1770 * 100% = 49.15254237288136%
+
     Если поэксперементировать и задать это значение в процентах для about__cards-part то мы получим тех же 870 пикселях, но при уменьшении ширины родительского блока пропоционально уменьшится и ширина about__cards-part
     */
     width: calc(870 / 1770 * 100%);
 }
 
-.about-us__card-big {
+.about__card-big {
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
@@ -273,84 +278,69 @@ body {
     background-position: center;
 }
 
-.about-us__card-big_more {
+.about__card-big_consultation {
     background-image: url("../img/worker.png");
 }
 
-.about-us__card-big-description-small {
-    display: none;
-}
-
-.about-us__card-big-description {
-    justify-content: space-between;
+.about__card-big-description {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 47px 50px;
-    color: var(--white);
+    padding: 15px 20px;
+    color: #fff;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.about-us__card-big-text {
-    max-width: 454px;
+.about__card-big-text {
+    width: calc(75% - 30px);
     margin-right: 30px;
+}
+
+.about__card-big-btn {
+    padding: 20px 38px;
+    border: 2px solid var(--bright-orange);
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    max-width: 25%;
+    margin-left: auto;
+}
+
+.about__card-headline {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 29px;
     font-weight: 700;
+    color: var(--bright-dark);
+}
+
+.about__card-text {
     font-size: 16px;
     line-height: 32px;
-    color: var(--white);
+    color: var(--bright-dark);
 }
 
-.about-us__card-big-btn {
-    padding: 20px 38px;
-    margin-left: auto;
-    background-color: transparent;
-    border: 2px solid var(--bright-orange);
-    transition: background-color 0.2s ease-in-out;
-    font-weight: 700;
-}
-
-.about-us__card-big-btn:hover, .about-us__card-big-btn:focus {
-    background-color: var(--bright-orange);
-}
-
-.about-us__card-big-btn:active {
-    background-color: var(--dark-orange);
-}
-
-.about-us__card-small {
+.about__card-small {
     padding: 65px 7% 65px 35%;
     border: 1px solid lightgray;
     background-repeat: no-repeat;
 }
 
-.about-us__card-small:not(:last-child) {
-    margin-bottom: 32px;
+.about__card-small:not(:last-child) {
+    margin-bottom: 10px;
 }
 
-.about-us__cards-headline {
-    margin-bottom: 8px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: var(--bright-dark);
-}
-
-.about-us__card-description {
-    /*width: 400px;*/
-    width: 92%;
-    font-size: 16px;
-    line-height: 31px;
-    color: var(--bright-dark);
-}
-
-.about-us__card-small_consult {
+.about__card-small_consult {
     background-image: url("../img/box.svg");
-    background-position: 9% 53%;
-    background-size: 22%;
+    background-position: 10% 40%;
+    background-size: 16%;
 }
 
-.about-us__card-small_other {
+.about__card-small_other {
     background-image: url("../img/cog.svg");
-    background-position: 9% 53%;
-    background-size: 22%;
+    background-position: 10% 50%;
+    background-size: 16%;
 }
 
 /*how we work*/
@@ -504,7 +494,7 @@ body {
     position: relative;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 40px 120px 40px 3px;
+    padding: 45px 120px 40px 3px;
     font-size: 24px;
     cursor: pointer;
     transition: color .3s ease;
@@ -524,13 +514,13 @@ body {
 .question:first-child:hover,
 .question:hover,
 .question:focus-within {
-    border-color: orange;
+    border-color: var(--bright-orange);
 }
 
 .head-icon {
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: -2px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -562,20 +552,20 @@ body {
 
 .heading:hover,
 .heading:focus {
-    color: orange;
+    color: var(--bright-orange);
     outline: none;
 }
 
 .heading:hover .head-icon,
 .heading:focus .head-icon {
-    background-color: orange;
+    background-color: var(--bright-orange);
 }
 
 .heading:hover .head-icon::before,
 .heading:hover .head-icon::after,
 .heading:focus .head-icon::before,
 .heading:focus .head-icon::after {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .heading.ui-accordion-header-active .head-icon {
@@ -616,7 +606,7 @@ body {
 }
 
 .logo-link-container__img {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: var(--white);
 }
 
