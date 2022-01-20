@@ -297,7 +297,6 @@ body {
 
 .about__card-big-btn {
     padding: 20px 38px;
-    max-width: 25%;
     margin-left: auto;
     border: 2px solid var(--bright-orange);
     text-align: center;

@@ -184,12 +184,16 @@
         line-height: 32px;
     }
 
+    .frequent-questions {
+        margin-bottom: 88px;
+    }
+
     .footer__wrapper {
         padding: 46px 45px;
     }
 
     .footer__nav-item {
-        line-height: 35px;
+        line-height: 37px;
     }
 
     .footer__left {
@@ -208,9 +212,17 @@
     .footer-description__description-text {
         display: none;
     }
+
+    .input-properties {
+        min-width: 102%;
+    }
 }
 
 @media (max-width: 992px) {
+    .header {
+        max-height: 90px;
+    }
+
     .header__container {
         padding: 30px 47px;
     }
@@ -221,6 +233,7 @@
 
     .brief-information__content {
         padding: 160px 40px;
+        background-image: url('../img/pic-1_768px.png');
     }
 
     .main__headline {
@@ -242,22 +255,52 @@
 
     .about__card-big {
         width: 100%;
-        padding-top: 60.13%;
+        padding-top: 67.13%;
+    }
+
+    .about__card-big-description {
+        padding: 35px 38px;
+    }
+
+    .about__card-big-text {
+        width: 370px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .about__card-big_consultation {
+        background-image: url("../img/768-worker.png");
     }
 
     .about__card-small {
         width: 100%;
-        padding: 20px 7% 20px 28%;
+        padding: 24px 3% 33px 26%;
+    }
+
+    .about__card-headline {
+
+    }
+
+    .about__cards-part:not(:last-of-type) {
+        margin-bottom: 31px;
     }
 
     .about__card-small:not(:last-of-type) {
-        margin-bottom: 32px;
+        margin-bottom: 33px;
     }
 
     .about__card-small_consult,
     .about__card-small_other {
-        background-position: 5% 50%;
-        background-size: 15%;
+        background-size: 18%;
+    }
+
+    .about__card-small_consult {
+        background-position: 6% 50%;
+    }
+
+    .about__card-small_other {
+        background-position: 7% 47%;
     }
 
     .how-we-work__list {
@@ -275,7 +318,7 @@
 
     .left-side__description {
         width: 104%;
-        margin-bottom: 47px;
+        margin-bottom: 26px;
     }
 
     .right-side {
@@ -292,16 +335,11 @@
     }
 
     .frequent-questions {
-        margin-bottom: 80px;
+        margin-bottom: 77px;
     }
 
-    .question__heading {
-        padding: 30px 42px 0 0;
-    }
-
-    .content {
-        padding-top: 30px;
-        padding-bottom: 17px;
+    .heading {
+        padding: 30px 85px 34px 3px;
     }
 
     .footer__wrapper {
@@ -328,6 +366,26 @@
     .inputs-wrapper {
         width: 80%;
     }
+
+    .form-wrapper__btn {
+        padding: 18px 41px;
+    }
+}
+
+@media (max-width: 757px) {
+    .about__card-big-description {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .about__card-big-btn {
+        margin-left: 0;
+    }
+
+    .about__card-big-text {
+        width: 370px;
+        margin: 0 0 10px 0;
+    }
 }
 
 @media (max-width: 660px) {
@@ -340,9 +398,9 @@
     }
 
     .brief-information__content {
-        /*display: flex;*/
+        display: flex;
         padding: 150px 21px;
-        /*flex-direction: column;*/
+        flex-direction: column;
     }
 
     .main__headline {
@@ -376,6 +434,16 @@
         background-size: 0;
     }
 
+    .about__card-big-text {
+        width: 370px;
+        margin: 0 0 10px 0;
+    }
+
+    .about__card-big-btn {
+        /*margin-left: 0;*/
+        color: var(--bright-orange);
+    }
+
     .about__card-big::before {
         content: "";
         display: block;
@@ -387,8 +455,10 @@
     }
 
     .about__card-big-description {
+        justify-content: space-between;
+        display: flex;
         padding: 0;
-        color: #000;
+        color: var(--black);
         background-color: transparent;
     }
 
@@ -693,11 +763,5 @@
     .social-icons {
         width: 40px;
         height: 40px;
-    }
-}
-
-@media (max-width: 390px) {
-    .about-us__card-small {
-        background-size: 19%;
     }
 }
