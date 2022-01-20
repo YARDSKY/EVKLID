@@ -440,7 +440,6 @@
     }
 
     .about__card-big-btn {
-        /*margin-left: 0;*/
         color: var(--bright-orange);
     }
 
@@ -492,6 +491,11 @@
 
     .footer__wrapper {
         padding: 30px;
+    }
+
+    .footer__wrapper {
+        align-items: center;
+        flex-direction: column-reverse;
     }
 
     .inputs-wrapper {
@@ -562,8 +566,8 @@
 }
 
 @media (max-width: 515px) {
-    .brief-information {
-        margin-bottom: 61px;
+    .header {
+        max-height: 82px;
     }
 
     .header__container {
@@ -576,11 +580,16 @@
         margin-right: 0;
     }
 
+    .brief-information {
+        margin-bottom: 61px;
+    }
+
     .brief-information__content {
         display: flex;
         flex-direction: column;
         padding: 60px 21px;
         min-height: 308px;
+        background-image: url('../img/pic-1_320px.png');
     }
 
     .main__headline {
@@ -602,7 +611,11 @@
     }
 
     .about {
-        margin-bottom: 47px;
+        margin-bottom: 53px;
+    }
+
+    .about__card-big_consultation {
+        background-image: url("../img/320-worker.png");
     }
 
     .about__headline {
@@ -611,13 +624,49 @@
         line-height: 29px;
     }
 
+    .about__cards-part:not(:last-of-type) {
+        margin-bottom: 24px;
+    }
+
+    .about__card-small:not(:last-of-type) {
+        margin-bottom: 18px;
+    }
+
+    .about__main-description {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .about__card-headline {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .about__card-text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .about__card-big-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .about__card-big-btn {
+        padding: 10px 42px;
+        font-size: 12px;
+        line-height: 15px;
+    }
 
     .how-we-work {
         margin-bottom: 62px;
     }
 
     .how-we-work__headline {
-        margin-bottom: 19px;
+        margin-bottom: 23px;
         font-size: 24px;
         line-height: 29px;
     }
@@ -669,17 +718,24 @@
     .right-side__img {
         min-height: 156px;
         width: 100%;
+        background-image: url('../img/320-how-we-work.png');
+    }
+
+    .frequent-questions {
+        margin-bottom: 63px;
     }
 
     .frequent-questions__headline {
+        margin-bottom: 15px;
         font-size: 24px;
         line-height: 29px;
     }
 
-    .question__heading {
+    .heading {
+        padding: 28px 47px 29px 3px;
         font-weight: 500;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 25px;
     }
 
     .head-icon {
