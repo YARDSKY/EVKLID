@@ -418,6 +418,7 @@ body {
 }
 
 .left-side__btn {
+    display: inline-block;
     padding: 20px 37px;
     margin-right: 32px;
     font-weight: 700;
