@@ -240,12 +240,13 @@ body {
 }
 
 .about__main-description {
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     max-width: 1235px;
     font-size: 16px;
     line-height: 33px;
     color: var(--bright-dark);
 }
+
 .about__cards-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -324,13 +325,13 @@ body {
 }
 
 .about__card-small {
-    padding: 53px 1% 72px 34%;
+    padding: 54px 1% 63px 34%;
     border: 1px solid lightgray;
     background-repeat: no-repeat;
 }
 
 .about__card-small:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 30px ;
 }
 
 .about__card-small_consult {
@@ -604,7 +605,7 @@ body {
 
 .footer__left {
     flex-basis: 21%;
-    margin-right: 25px;
+    margin-right: 17px;
 }
 
 .logo-link-container__img {

@@ -105,32 +105,46 @@
 
     .about__cards-part {
         display: flex;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
+        flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
     }
 
+    .about__main-description {
+        margin-bottom: 58px;
+    }
+
     .about__cards-part:not(:last-of-type) {
-        margin-bottom: 32px;
+        margin-bottom: 42px;
     }
 
     .about__card-big {
         width: 100%;
-        padding-top: 50%;
+        padding-top: 48%;
+    }
+
+    .about__card-big_consultation {
+        background-image: url("../img/1024-worker.png");
     }
 
     .about__card-small {
-        width: calc(50% - 15px);
-        padding: 20px 7% 20px 16%;
+        width: 100%;
+        padding: 52px 4% 56px 34%;
     }
 
-    .about__card-small:not(:last-of-type) {
+    .about__card-small:last-child {
         margin-bottom: 0;
     }
 
+    .about__card-small:not(:last-child) {
+        margin-bottom: 39px;
+    }
+
+
     .about__card-small_consult,
     .about__card-small_other {
-        background-position: 10% 30px;
+        background-position: 11% 60px;
     }
 
     .about__card-small_consult {
@@ -163,9 +177,10 @@
         background-image: url('../img/how-we-work_small.png');
     }
 
-    .question__heading {
-        padding: 32px 42px 7px 0;
+    .heading {
+        font-weight: 700;
         font-size: 20px;
+        line-height: 32px;
     }
 
     .footer__wrapper {
@@ -524,7 +539,6 @@
         font-size: 24px;
         line-height: 29px;
     }
-
 
 
     .how-we-work {
