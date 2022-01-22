@@ -79,7 +79,7 @@
     .brief-information__content {
         padding: 160px 77px;
         min-height: 668px;
-        background-image: url('../img/pic-1_1024px.png');
+        /*background-image: url('../img/pic-1_1024px.png');*/
     }
 
     .main__headline {
@@ -233,7 +233,7 @@
 
     .brief-information__content {
         padding: 160px 40px;
-        background-image: url('../img/pic-1_768px.png');
+        /*background-image: url('../img/pic-1_768px.png');*/
     }
 
     .main__headline {
@@ -588,7 +588,7 @@
         flex-direction: column;
         padding: 60px 21px;
         min-height: 308px;
-        background-image: url('../img/pic-1_320px.png');
+        /*background-image: url('../img/pic-1_320px.png');*/
     }
 
     .main__headline {
