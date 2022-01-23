@@ -127,9 +127,9 @@ body {
     justify-content: space-between;
 }
 
-.burger-btn {
-    display: none;
-}
+/*.burger {*/
+/*    display: none;*/
+/*}*/
 
 .header__logo {
     margin-right: 50px;
