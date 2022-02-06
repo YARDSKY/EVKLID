@@ -438,6 +438,13 @@ body {
     width: calc(870 / 1770 * 100%);
 }
 
+.step-block__item_second {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-basis: 49.1%;
+}
+
 .about__card-big {
     display: flex;
     flex-direction: column;
@@ -581,7 +588,7 @@ body {
     color: var(--bright-dark);
 }
 
-.left-side__description {
+.left-side__description, .step-block__description {
     margin-bottom: 46px;
     max-width: 758px;
     font-weight: 400;
@@ -640,6 +647,26 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('../img/how-we-work.png');
+}
+
+.working__block {
+    display: none;
+}
+
+.working__block_active {
+    display: flex;
+}
+
+.step-block__item_first {
+    flex-basis: 42.8%;
+    margin-right: auto;
+}
+
+.step-block__title {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
 }
 
 /*frequent questions*/
