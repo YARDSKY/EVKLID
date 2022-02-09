@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <title>Евклид — проектные системы</title>
 </head>
 <body>
@@ -55,17 +56,23 @@
 <main class="main">
   <section class="brief-information section-offset" id="projects">
     <div class="container brief-information__container">
-      <div class="brief-information__content">
-        <h1 class="main__headline headline-offset">
-          Проектные решения любой сложности
-        </h1>
-        <p class="main__description text-offset">
-          Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются
-          уделом
-          проектантов </p>
-        <button class="btn main__btn btn-reset">
-          Заказать расчёт
-        </button>
+      <div class="content-wrap">
+        <div class="content brief-information__content">
+          <h1 class="main__headline">Проектные решения любой сложности</h1>
+          <p class="main__description text-offset">Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей
+            день остаются уделом проектантов</p>
+          <a href="#" class="btn main__btn">Заказать расчёт</a>
+        </div>
+        <div class="swiper-container slider">
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide slide-1"></div>
+            <div class="swiper-slide slide slide-2"></div>
+            <div class="swiper-slide slide slide-3"></div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -337,6 +344,7 @@
     </div>
   </div>
 </footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

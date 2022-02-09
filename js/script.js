@@ -1,6 +1,8 @@
-$( ".js-accordion" ).accordion({
-  collapsible: true,
-  active: false,
-  icons: false,
-  heightStyle: 'content'
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
