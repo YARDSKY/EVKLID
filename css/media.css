@@ -698,7 +698,18 @@
     flex-direction: column;
     padding: 60px 21px;
     min-height: 308px;
-    background-image: url('../img/pic-1_320px.png');
+  }
+
+  .slide-1 {
+    background-image: url("../img/pic-1_320px.png");
+  }
+
+  .slide-2 {
+    background-image: url("../img/pic_2.png");
+  }
+
+  .slide-3 {
+    background-image: url("../img/pic_3.png");
   }
 
   .main__headline {
