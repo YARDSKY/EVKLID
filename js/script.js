@@ -7,6 +7,15 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
+
+$( ".js-accordion" ).accordion({
+  collapsible: true,
+  active: false,
+  icons: false,
+  heightStyle: 'content'
+});
+
+
 // здесь мы определяем функцию, которая отвеает за работу меню, в ней не нужно ничего менять
 function setBurger(params) {
   const btn = document.querySelector(`.${params.btnClass}`);
