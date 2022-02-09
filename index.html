@@ -13,44 +13,44 @@
 <body>
 <header class="header">
   <div class="container header__container flex">
-    <button class="btn-reset burger-btn">
-      <span class="burger-btn__line"></span>
-      <span class="burger-btn__line"></span>
-      <span class="burger-btn__line"></span>
-    </button>
     <a href="" class="header__logo logo-wrapper">
       <img class="logo-wrapper" src="img/logo.svg" alt="Евклид — проектные системы">
     </a>
     <nav class="header__nav flex">
-      <ul class="header__nav-list list-reset flex">
-        <li class="header__list-item">
-          <a href="#about-us" class="header__item-link">О нас</a>
-        </li>
-        <li class="header__list-item">
-          <a href="#projects" class="header__item-link">Проекты</a>
-        </li>
-        <li class="header__list-item">
-          <a href="#stages" class="header__item-link">Этапы</a>
-        </li>
-        <li class="header__list-item">
-          <a href="#" class="header__item-link">Отзывы</a>
-        </li>
-        <li class="header__list-item">
-          <a href="#" class="header__item-link">Контакты</a>
-        </li>
-      </ul>
-      <button class="btn-reset">
-        <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <rect width="7.56126" height="1.89031"
-                transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)"
-                fill="#333333"/>
-          <path
-                  d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
-                  stroke="#333333" stroke-width="2"/>
-        </svg>
+      <div class="menu-wrap">
+        <ul class="menu flex list-reset">
+          <li class="item">
+            <a class="header__item-link" href="#">О нас</a>
+          </li>
+          <li class="item">
+            <a class="header__item-link" href="#">Проекты</a>
+          </li>
+          <li class="item">
+            <a class="header__item-link" href="#">Этапы</a>
+          </li>
+          <li class="item">
+            <a class="header__item-link" href="#">Отзывы</a>
+          </li>
+          <li class="item">
+            <a class="header__item-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <button class="btn-reset burger">
+        <span></span>
       </button>
     </nav>
+    <button class="btn-reset search-btn">
+      <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+        <rect width="7.56126" height="1.89031"
+              transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)"
+              fill="#333333"/>
+        <path
+                d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+                stroke="#333333" stroke-width="2"/>
+      </svg>
+    </button>
   </div>
 </header>
 <main class="main">
