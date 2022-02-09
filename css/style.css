@@ -62,14 +62,6 @@ img {
     --dark-grey-shade: #414141;
     --dark-orange: #E1670E;
     --shade-of-bright-dark: #666;
-    --swiper-pagination-bullet-width: 10px;
-    --swiper-pagination-bullet-size: 10px;
-    --swiper-pagination-bullet-height: 10px;
-    --swiper-theme-color: #fff;
-    --swiper-pagination-bullet-horizontal-gap: 10px;
-    --swiper-pagination-bullet-inactive-opacity: .2;
-    --swiper-pagination-bullet-inactive-color: #fff;
-    --swiper-pagination-color: #fff;
 }
 
 /*global*/
@@ -127,121 +119,8 @@ body {
     justify-content: space-between;
 }
 
-.burger {
-    position: relative;
+.burger-btn {
     display: none;
-    width: 30px;
-    height: 23px;
-}
-
-.burger__line {
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    transform: translateX(-50%);
-}
-
-.burger__line:nth-child(2) {
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.burger__line:first-child {
-    bottom: 20px;
-}
-
-.burger__line:last-child {
-    top: 20px;
-}
-
-.burger:focus-visible{
-    outline:  3px solid #FF9900;
-    background-color: #FFF;
-}
-
-.burger:active .burger__line:nth-child(2) {
-    width: 25px;
-    transform: translate(-40%, -50%)
-}
-
-.burger:active .burger__line {
-    background-color: #E1670E;
-}
-
-.burger:active .burger__line:last-child {
-    width: 18px;
-    transform: translate(-15%, 0%)
-}
-
-.menu {
-    position: absolute;
-    padding-top: 40px;
-    padding-left: 50px;
-    z-index: 20;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 420px;
-    height: 767.73px;
-    background-color: #fff;
-    transition: transform .3s ease;
-    transform: translateX(-101%);
-    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-    display: none;
-}
-
-
-.menu__list {
-    margin-top: 100px;
-}
-
-.menu__item {
-    margin-bottom: 60px;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-}
-
-.menu__link:hover {
-    color: #FF9900;
-}
-
-.menu__link:focus-visible{
-    outline: 2px solid #FF9900;
-}
-
-.menu__burger {
-    position: relative;
-    width: 30px;
-    height: 30px;
-}
-
-.menu__burger:hover .menu__line{
-    background-color: #FF9900;
-}
-
-.menu__burger:focus-visible{
-    outline: 2px solid #FF9900;
-}
-
-.menu__line {
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-}
-
-.menu__line:first-child {
-    top: 10px;
-    left: 0;
-    transform: rotate(45deg);
-}
-
-.menu__line:last-child {
-    top: 10px;
-    left: 0;
-    transform: rotate(-45deg)
 }
 
 .header__logo {
@@ -305,73 +184,20 @@ body {
     outline: 1px solid var(--bright-orange);
 }
 
+
 /*brief information*/
 .brief-information__content {
+    padding: 100px 100px 100px 80px;
     min-height: 619px;
     width: 100%;
-    position: relative;
-    z-index: 2;
-    padding: 100px 100px 100px 80px;
-    pointer-events: none;
-    color: #fff;
-}
-
-.content-wrap {
-    position: relative;
-    background-color: var(--bright-dark);
-}
-
-.content > * {
-    pointer-events: auto;
-}
-
-.slider {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: gray;
-}
-
-.slide {
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--bright-dark);
+    background-image: url('../img/pic-1.png');
 }
-
-.swiper-pagination-bullet {
-    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 20px));
-    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 20px));
-    background: var(--swiper-pagination-bullet-inactive-color, #000);
-    opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
-}
-
-
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
-}
-
-
-.swiper-pagination-bullet-active {
-    background: var(--swiper-pagination-color, var(--swiper-theme-color));
-}
-.swiper-pagination {
-    margin-bottom: 20px;
-    position: absolute;
-    text-align: center;
-    transition: .3s opacity;
-    transform: translate3d(0,0,0);
-    z-index: 10;
-}
-/*.swiper-pagination-bullet {*/
-/*  */
-/*}*/
 
 .main__headline {
-    display: inline-block;
     margin: 0 0 24px 0;
     max-width: 837px;
     font-weight: 800;
@@ -436,13 +262,6 @@ body {
     Если поэксперементировать и задать это значение в процентах для about__cards-part то мы получим тех же 870 пикселях, но при уменьшении ширины родительского блока пропоционально уменьшится и ширина about__cards-part
     */
     width: calc(870 / 1770 * 100%);
-}
-
-.step-block__item_second {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex-basis: 49.1%;
 }
 
 .about__card-big {
@@ -588,7 +407,7 @@ body {
     color: var(--bright-dark);
 }
 
-.left-side__description, .step-block__description {
+.left-side__description {
     margin-bottom: 46px;
     max-width: 758px;
     font-weight: 400;
@@ -649,26 +468,6 @@ body {
     background-image: url('../img/how-we-work.png');
 }
 
-.working__block {
-    display: none;
-}
-
-.working__block_active {
-    display: flex;
-}
-
-.step-block__item_first {
-    flex-basis: 42.8%;
-    margin-right: auto;
-}
-
-.step-block__title {
-    margin-bottom: 8px;
-    font-weight: bold;
-    font-size: 24px;
-    color: #333;
-}
-
 /*frequent questions*/
 .frequent-questions__headline {
     margin-bottom: 32px;
@@ -707,18 +506,8 @@ body {
 }
 
 .content {
-    padding-top: 30px;
-    padding-bottom: 40px;
-}
-
-.content__text {
-    font-size: 16px;
-    line-height: 32px;
-    color: var(--bright-dark);
-}
-
-.content__text-top {
-    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .text {
@@ -786,6 +575,7 @@ body {
 .heading.ui-accordion-header-active .head-icon {
     transform: translateY(-50%) rotate(45deg);
 }
+
 
 
 /*footer*/
