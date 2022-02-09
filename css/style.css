@@ -568,6 +568,39 @@ body {
   background-image: url('../img/how-we-work.png');
 }
 
+.second-img {
+  background-image: url('../img/how-we-work2.png');
+}
+
+.third-img {
+  background-image: url('../img/how-we-work3.png');
+}
+
+.fourth-img {
+  background-image: url('../img/how-we-work4.png');
+}
+
+.tab-content {
+  display: none;
+  justify-content: space-between;
+}
+
+.tab-content.active {
+  display: flex;
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*frequent questions*/
 .frequent-questions__headline {
   margin-bottom: 32px;

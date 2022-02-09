@@ -1,3 +1,4 @@
+//swiper
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   loop: true,
@@ -7,7 +8,7 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
-
+//accordion
 $( ".js-accordion" ).accordion({
   collapsible: true,
   active: false,
@@ -44,6 +45,7 @@ function setBurger(params) {
   });
 }
 
+//burger
 // здесь мы вызываем функцию и передаем в нее классы наших элементов
 setBurger({
   btnClass: "burger", // класс бургера
