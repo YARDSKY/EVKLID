@@ -95,4 +95,5 @@ function setSearch(params) {
       search.classList.add(params.hiddenClass);
     }
   });
+
 }
