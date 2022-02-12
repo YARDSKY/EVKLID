@@ -874,6 +874,8 @@ body {
 
 .check {
   padding-left: 1.2em;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
 }
 
 .checkbox-agreement {
@@ -891,14 +893,19 @@ body {
   width: 1em;
   height: 1em;
   box-shadow: 0 0 0 2px #cacaca;
+  transition: outline 0.2s ease-in-out;
 }
 
 .checkbox-agreement:checked + .checkbox {
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.94976 1.08233L4.00002 6.03208L1.17159 3.20365' stroke='%2397EE3F' stroke-width='2'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: center center;
-
 }
+
+ .checkbox:hover, .checkbox:focus {
+  outline: 1px solid var(--bright-orange);
+}
+
 
 .form-wrapper__personal-date {
   color: var(--bright-grey);
