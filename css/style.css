@@ -59,6 +59,7 @@ img {
   --black: #000;
   --dark-grey: #222;
   --bright-grey: #cacaca;
+  --yellow-focus: #F7B045;
   --dark-grey-shade: #414141;
   --dark-orange: #E1670E;
   --shade-of-bright-dark: #666;
@@ -324,7 +325,7 @@ body {
   background-image: url("../img/pic_3.png");
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 27px !important;
   left: 0;
   width: 100%;
@@ -406,6 +407,12 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.about__card-big-btn:focus {
+  background-color: var(--yellow-focus);
+  outline: none;
 }
 
 .about__card-headline {
@@ -692,12 +699,21 @@ body {
 .heading:hover,
 .heading:focus {
   color: var(--bright-orange);
-  outline: none;
+  outline: none
 }
 
 .heading:hover .head-icon,
 .heading:focus .head-icon {
   background-color: var(--bright-orange);
+}
+
+.head-icon:focus {
+  background-color: var(--bright-orange);
+  outline: 1px solid var(--bright-orange);
+}
+
+.head-icon:focus::after, .head-icon:focus::before {
+  background-color: var(--white);
 }
 
 .heading:hover .head-icon::before,
