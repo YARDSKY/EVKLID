@@ -1,3 +1,4 @@
+//swiper
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   loop: true,
@@ -7,54 +8,92 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
+//accordion
 $( ".js-accordion" ).accordion({
   collapsible: true,
-  active: true,
+  active: false,
   icons: false,
   heightStyle: 'content'
 });
 
-// burger
-window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector("#burger").addEventListener('click', function () {
-    document.querySelector('#menu').classList.toggle('is-active')
-  })
-})
 
-window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector("#burger1").addEventListener('click', function () {
-    document.querySelector('#menu').classList.toggle('is-active')
-  })
-})
+// здесь мы определяем функцию, которая отвеает за работу меню, в ней не нужно ничего менять
+function setBurger(params) {
+  const btn = document.querySelector(`.${params.btnClass}`);
+  const menu = document.querySelector(`.${params.menuClass}`);
 
-window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector("#btn1").addEventListener('click', function () {
-    document.querySelector('#search').classList.toggle('is-active')
-  })
-})
+  menu.addEventListener("animationend", function () {
+    if (this.classList.contains(params.hiddenClass)) {
+      this.classList.remove(params.activeClass);
+      this.classList.remove(params.hiddenClass);
+    }
+  });
 
-window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector("#btn2").addEventListener('click', function () {
-    document.querySelector('#search').classList.toggle('is-active')
-  })
-})
+  btn.addEventListener("click", function () {
+    this.classList.toggle(params.activeClass);
 
-//tabs
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.working__btn').forEach(function(tabsBtn) {
-    tabsBtn.addEventListener('click', function (event) {
-      const path = event.currentTarget.dataset.path
-      console.log(path)
+    if (
+        !menu.classList.contains(params.activeClass) &&
+        !menu.classList.contains(params.hiddenClass)
+    ) {
+      menu.classList.add(params.activeClass);
+      document.body.style.overflow = 'hidden';
+    } else {
+      menu.classList.add(params.hiddenClass);
+      document.body.removeAttribute('style');
+    }
+  });
+}
 
-      document.querySelectorAll('.working__block').forEach(function (tabContent) {
-        tabContent.classList.remove('working__block_active')
-      })
+//burger
+// здесь мы вызываем функцию и передаем в нее классы наших элементов
+setBurger({
+  btnClass: "burger", // класс бургера
+  menuClass: "menu-wrap", // класс меню
+  activeClass: "is-opened", // класс открытого состояния
+  hiddenClass: "is-closed" // класс закрывающегося состояния (удаляется сразу после закрытия)
+});
 
-      document.querySelectorAll('.working__btn').forEach(function (btnActive) {
-        btnActive.classList.remove('working__btn_active')
-      })
-      document.querySelector(`[data-target="${path}"]`).classList.add('working__block_active')
-      document.querySelector(`[data-path="${path}"]`).classList.add('working__btn_active')
-    })
-  })
-})
+function setSearch(params) {
+  const openBtn = document.querySelector(`.${params.openBtnClass}`);
+  const search = document.querySelector(`.${params.searchClass}`);
+  const closeBtn = search.querySelector(`.${params.closeBtnClass}`);
+
+  search.addEventListener("animationend", function (evt) {
+    if (this._isOpened) {
+      this.classList.remove(params.activeClass);
+      this.classList.remove(params.hiddenClass);
+      this._isOpened = false;
+    } else {
+      this._isOpened = true;
+    }
+  });
+
+  search.addEventListener('click', function(evt) {
+    evt._isSearch = true;
+  });
+
+  openBtn.addEventListener("click", function (evt) {
+    this.disabled = true;
+
+    if (
+        !search.classList.contains(params.activeClass) &&
+        !search.classList.contains(params.hiddenClass)
+    ) {
+      search.classList.add(params.activeClass);
+    }
+  });
+
+  closeBtn.addEventListener('click', function () {
+    openBtn.disabled = false;
+    search.classList.add(params.hiddenClass);
+  });
+
+  document.body.addEventListener('click', function (evt) {
+    if (!evt._isSearch && search._isOpened) {
+      openBtn.disabled = false;
+      search.classList.add(params.hiddenClass);
+    }
+  });
+
+}
